@@ -14,8 +14,8 @@ baseRouter.get('/greeting', (req, res) => {
 });
 
 baseRouter.post('/add', (req, res) => {
-    let first = req.first;
-    let second = req.second; 
+    let first = req.body.first;
+    let second = req.body.second; 
     res.json({ "result": first + second });
 });
 
